@@ -10,7 +10,7 @@ class CourseItem extends React.Component {
                 <span className="font-bold text-blue-500 mr-2">
                     {item.id}:
                 </span>
-                <span className="text-black-600 hover:text-red-500">{item.title}</span>
+                <span className="text-black-600 hover:text-yellow-500">{item.title}</span>
             </div>
         )
     }

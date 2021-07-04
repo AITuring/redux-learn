@@ -8,7 +8,7 @@ class ReduxLearn extends React.Component {
   render() {
     return (
       <div>
-        <CourseList />
+        <CourseList className="bg-pink-300" />
         <CourseField />
       </div>
     )
