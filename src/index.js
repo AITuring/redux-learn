@@ -1,12 +1,11 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import './index.css';
-import ReduxLearn from "./pages/reduxLearn";
+import App from "./App";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <ReduxLearn />
+    <App />
   </StrictMode>,
   rootElement
 );
