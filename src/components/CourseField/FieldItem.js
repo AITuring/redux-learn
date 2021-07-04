@@ -5,7 +5,7 @@ class FieldItem extends React.Component {
     const {title, id, userId} = this.props.item;
     return (
 
-      <div>{`${id}:   ${title}`}</div>
+      <div className="m-2">{`${id}:   ${title}`}</div>
     )
   }
 
