@@ -22,7 +22,7 @@ class CourseList extends React.Component {
   render () {
     const { courseList } = this.state;
     return (
-      <div>
+      <div className="w-6/12 flex-initial bg-gray-300">
         <div className="text-2xl text-center m-4">CourseList</div>
         {
           courseList.map(item => (

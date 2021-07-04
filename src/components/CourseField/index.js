@@ -21,7 +21,8 @@ class CourseField extends React.Component {
   render () {
     const { fieldData } = this.state;
     return (
-      <div>
+      <div className="bg-yellow-300 flex-initial w-6/12" >
+        <div className="text-2xl text-center m-4">CourseField</div>
         <FieldItem
           key={'-1'}
           item={
