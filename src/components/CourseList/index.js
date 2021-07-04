@@ -1,5 +1,6 @@
 import React from 'react';
-import {getCourseList} from '../../models'
+import {getCourseList} from '../../models';
+import CourseItem from './CourseItem';
 
 class CourseList extends React.Component {
 
@@ -19,8 +20,19 @@ class CourseList extends React.Component {
   }
 
   render () {
+    const { courseList } = this.state;
     return (
-      <div>CourseList</div>
+      <div>
+        <div className="text-2xl text-center m-4">CourseList</div>
+        {
+          courseList.map(item => (
+            <CourseItem
+              key={item.id}
+              item={item}
+            />
+          ))
+        }
+      </div>
     )
   }
 

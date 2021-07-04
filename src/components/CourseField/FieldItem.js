@@ -2,10 +2,10 @@ import React from 'react';
 
 class FieldItem extends React.Component {
   render() {
-    const {title, id, userId} = this.props.item;
+    const { item } = this.props;
     return (
 
-      <div className="m-2">{`${id}:   ${title}`}</div>
+      <div className="m-2">{`${item.id}:   ${item.title}`}</div>
     )
   }
 

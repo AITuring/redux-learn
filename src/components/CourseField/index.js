@@ -9,7 +9,6 @@ class CourseField extends React.Component {
 
   async getFieldData() {
     const courseFieldData  = await getCourseFields();
-    console.log(courseFieldData)
       this.setState({
         fieldData: courseFieldData
       });
@@ -21,7 +20,6 @@ class CourseField extends React.Component {
 
   render () {
     const { fieldData } = this.state;
-    console.log(fieldData)
     return (
       <div>
         <FieldItem
