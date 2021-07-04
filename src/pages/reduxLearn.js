@@ -1,5 +1,5 @@
 import React from 'react';
-import {getCourseList, getCourseFields} from '../models';
+import { connent } from 'react-redux';
 import CourseList from '../components/CourseList';
 import CourseField from '../components/CourseField';
 
