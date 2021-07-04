@@ -23,7 +23,17 @@ class CourseList extends React.Component {
     const { courseList } = this.state;
     return (
       <div className="w-6/12 flex-initial bg-gray-300">
-        <div className="text-2xl text-center m-4">CourseList</div>
+        {/* <div className="text-2xl text-center m-4">CourseList</div> */}
+        <CourseItem
+          key={'-1'}
+          item={
+            {
+              id: '共计',
+              title: courseList.length,
+              userId: courseList.length
+            }
+          }
+        />
         {
           courseList.map(item => (
             <CourseItem

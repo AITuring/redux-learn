@@ -22,7 +22,7 @@ class CourseField extends React.Component {
     const { fieldData } = this.state;
     return (
       <div className="bg-yellow-300 flex-initial w-6/12" >
-        <div className="text-2xl text-center m-4">CourseField</div>
+        {/* <div className="text-2xl text-center m-4">CourseField</div> */}
         <FieldItem
           key={'-1'}
           item={
@@ -31,7 +31,6 @@ class CourseField extends React.Component {
               title: fieldData.length,
               userId: fieldData.length
             }
-
           }
         />
         {
