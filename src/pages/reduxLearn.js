@@ -1,11 +1,14 @@
 import React from 'react';
-import { connent } from 'react-redux';
+import { connect } from 'react-redux';
 import CourseList from '../components/CourseList';
 import CourseField from '../components/CourseField';
+import changeCourseField from '../store/actions';
 
 class ReduxLearn extends React.Component {
 
   render() {
+    const { currentField, changeCourseField } = this.props;
+    console.log(currentField)
     return (
       <>
         <div className="flex">
@@ -19,12 +22,24 @@ class ReduxLearn extends React.Component {
           </div>
         </div>
         <div className="flex">
-          <CourseList />
-          <CourseField />
+          <CourseList currentField = {currentField}/>
+          <CourseField currentField = {currentField}/>
         </div>
       </>
     )
   }
 }
 
-export default ReduxLearn;
+export default connect (
+  function mapStateToProps (state) {
+    return {
+      currentField: state.courseTabList.currentField
+    }
+  },
+
+  function mapDispatchToProps (dispatch) {
+    return {
+      changeCourseField: (field) => dispatch(changeCourseField(field))
+    }
+  }
+)(ReduxLearn);
