@@ -3,7 +3,7 @@ import { axiosGet } from "../utils/request";
 function getCourseFields () {
   return new Promise((resolve, reject) => {
     axiosGet({
-      url: 'albums',
+      url: 'GetAllInfoGzip?id=1&page=0&type=pc',
       success: (data) => {
         resolve(data);
       },
